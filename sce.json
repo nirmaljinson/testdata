@@ -1,22 +1,16 @@
-{
-  "student": {
-    "ID": "S001",
-    "Name": "Alice Johnson",
-    "GPA": 3.8,
-    "FamilyIncome": 42000.0,
-    "SocioeconomicStatus": "Rural",
-    "Extracurriculars": 3,
-    "AcademicDiscipline": "Engineering",
-    "DisciplinaryRecord": false,
-    "EnrollmentType": "Full-time",
-    "PreviousScholarship": false
-  },
-  "scholarship": {
-    "ScholarshipID": "SCH001",
-    "Name": "Merit-Need Scholarship",
-    "GPARequirement": 3.5,
-    "IncomeThreshold": 50000.0,
-    "PriorityDiscipline": ["Engineering", "Science", "Education"]
-  },
-  "expectedResult": "Eligible"
-}
+Student
+- ID: String
+- name: String
+- GPA: Float (0.0 – 4.0 scale)
+- entranceExamScore: Integer (0–100)
+- englishProficiency: String ("IELTS", "TOEFL", "PTE")
+- englishScore: Float
+- priorQualification: String ("High School", "Diploma", "Bachelor’s")
+- workExperienceYears: Integer
+- isInternational: Boolean
+- hasAcademicException: Boolean
+
+AdmissionDecision
+- studentID: String
+- decision: String ("Accepted", "Conditionally Accepted", "Rejected")
+- reason: String
